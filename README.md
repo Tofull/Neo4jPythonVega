@@ -36,3 +36,7 @@ List available [here](https://www.w3schools.com/icons/fontawesome_icons_webapp.a
 Bootstrap gentelella
 
 > TODO : remove all unused css and js files
+
+## Sources of inspiration
+
+* <adilmoujahid/kaggle-talkingdata-visualization> and <http://adilmoujahid.com/posts/2015/01/interactive-data-visualization-d3-dc-python-mongodb/>
