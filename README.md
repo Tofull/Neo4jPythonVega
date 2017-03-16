@@ -13,7 +13,18 @@ Flask and Jinja2 : conda install
 Bootstrap : clone github
 Vega :  *TODO*
 
-### Nodejs
+### Neo4j
+
+Launch server and python script to import social data (see <https://github.com/Tofull/social_graph>)
+``` sh
+$ /home/nil/Utils/neo4j-community-3.1.1/bin/neo4j start
+``` 
+
+* Check that server is up at <http://localhost:7474/browser/>
+* On the web interface, check that the social data has been imported
+
+
+### Nodejs (unecessary)
 
 * Instruction for Debian/Ubuntu: <https://nodejs.org/en/download/package-manager/>
 
@@ -36,3 +47,13 @@ List available [here](https://www.w3schools.com/icons/fontawesome_icons_webapp.a
 Bootstrap gentelella
 
 > TODO : remove all unused css and js files
+
+## Server - Client
+
+* Launch server
+
+``` sh
+$ python server.py 
+```
+
+Check that it is working at : <http://127.0.0.1:5000/>

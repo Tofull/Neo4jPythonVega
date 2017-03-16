@@ -1,0 +1,143 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data mining </title>
+
+    <!-- Bootstrap -->
+    <link href="{{ url_for('static', filename='vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="{{ url_for('static', filename='vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <!-- iCheck
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">-->
+    <!-- bootstrap-progressbar
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet"> -->
+    <!-- jVectorMap
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet" />-->
+
+    <!-- Custom Theme Style -->
+    <link href="{{ url_for('static', filename='build/css/custom.min.css')}}" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col">
+                <div class="left_col scroll-view">
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a href="/" class="site_title"><i class="fa fa-home"></i> <span>Data mining</span></a>
+                    </div>
+
+                    <!-- <div class="clearfix"></div> -->
+
+                    <br/>
+
+                    <!-- sidebar menu -->
+                    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                        <div class="menu_section">
+                            <h3>Index</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-edit"></i> Context <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="/">Objectives</a></li>
+                                        <li><a href="index2.html">Tools</a></li>
+                                        <li><a href="index3.html">Setup</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/stats"><i class="fa fa-bar-chart"></i> Statistics </a>
+                                </li>
+                                <li><a><i class="fa fa-connectdevelop"></i> Graphs <span class="fa fa-chevron-down"></span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="prescriptors.html">Prescriptors</a></li>
+                                        <li><a href="connections.html">Connected to presciptors</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_section">
+                            <h3>Authors</h3>
+                            <ul class="nav side-menu">
+                                <li><a><i class="fa fa-user"></i> Loïc Messal </a>
+                                </li>
+                                <li><a><i class="fa fa-user"></i> Camille Parisel</a>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- /sidebar menu -->
+
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            <div class="top_nav">
+                <div class="nav_menu">
+                    <nav class="" role="navigation">
+                        <div class="nav toggle">
+                            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- /top navigation -->
+
+
+      {% block body %}
+      {% endblock %}
+
+
+
+            </div>
+        </div>
+
+
+        <!-- jQuery -->
+        <script src="{{ url_for('static', filename='vendors/jquery/dist/jquery.min.js')}}"></script>
+        <!-- Bootstrap -->
+        <script src="{{ url_for('static', filename='vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+        <!-- FastClick -->
+        <script src="{{ url_for('static', filename='vendors/fastclick/lib/fastclick.js')}}"></script>
+        <!-- NProgress -->
+        <script src="{{ url_for('static', filename='vendors/nprogress/nprogress.js')}}"></script>
+        <!-- Chart.js -->
+        <script src="{{ url_for('static', filename='vendors/Chart.js/dist/Chart.min.js')}}"></script>
+        <script src="{{ url_for('static', filename='mycharts.js')}}"></script>
+        <!-- gauge.js -->
+        <script src="{{ url_for('static', filename='vendors/bernii/gauge.js/dist/gauge.min.js')}}"></script>
+        <!-- bootstrap-progressbar -->
+        <script src="{{ url_for('static', filename='vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')}}"></script>
+        <!-- iCheck -->
+        <script src="{{ url_for('static', filename='vendors/iCheck/icheck.min.js')}}"></script>
+        <!-- Skycons -->
+        <script src="{{ url_for('static', filename='vendors/skycons/skycons.js')}}"></script>
+        <!-- Flot
+        <script src="{{ url_for('static', filename='vendors/Flot/jquery.flot.js')}}"></script>
+        <script src="{{ url_for('static', filename='vendors/Flot/jquery.flot.pie.js')}}"></script>
+        <script src="{{ url_for('static', filename='vendors/Flot/jquery.flot.time.js')}}"></script>
+        <script src="{{ url_for('static', filename='vendors/Flot/jquery.flot.stack.js')}}"></script>
+        <script src="{{ url_for('static', filename='vendors/Flot/jquery.flot.resize.js')}}"></script>-->
+        <!-- Flot plugins
+        <script src="js/flot/jquery.flot.orderBars.js"></script>
+        <script src="js/flot/date.js"></script>
+        <script src="js/flot/jquery.flot.spline.js"></script>
+        <script src="js/flot/curvedLines.js"></script>-->
+        <!-- jVectorMap
+        <script src="js/maps/jquery-jvectormap-2.0.3.min.js"></script>-->
+        <!-- bootstrap-daterangepicker
+        <script src="js/moment/moment.min.js"></script>
+        <script src="js/datepicker/daterangepicker.js"></script>-->
+
+        <!-- Custom Theme Scripts -->
+        <script src="{{ url_for('static', filename='build/js/custom.min.js')}}"></script>
+
+</body>
+
+</html>
