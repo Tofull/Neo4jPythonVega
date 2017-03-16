@@ -57,3 +57,8 @@ $ python server.py
 ```
 
 Check that it is working at : <http://127.0.0.1:5000/>
+
+## Sources of inspiration
+
+* <adilmoujahid/kaggle-talkingdata-visualization> and <http://adilmoujahid.com/posts/2015/01/interactive-data-visualization-d3-dc-python-mongodb/>
+
